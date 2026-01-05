@@ -1,0 +1,25 @@
+#login-form {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+#login-title {
+    text-align: center;
+    color: brown;
+}
+
+#submit {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    width: 100px;
+    cursor: pointer;
+    background-color: rgb(40, 138, 218);
+}
+
+.login-card {
+    width: 300px;
+    margin: auto;
+}
