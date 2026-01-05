@@ -17,11 +17,13 @@ function reset() {
 
 function checkUserExist(email) {
 
-  userArr.forEach((user)=>{
+  for(let i = 0; i < userArr.length; i++){
+    const user = userArr[i];
+
     if(user.email == email){
-      return true;
+        return true;
     }
-  })
+  }
 
   return false;
 }
@@ -49,8 +51,9 @@ form.addEventListener("submit", (event) => {
     return;
   }
 
+  // TODO: Not working
   if (checkUserExist(email)) {
-    alert("user Exist!, try with different email");
+    alert("User already exist!, try with different email");
     return;
   }
 
@@ -72,5 +75,6 @@ form.addEventListener("submit", (event) => {
 
   localStorage.setItem(storageKey, JSON.stringify(userArr));
 
-  // redirectUser(newUser.role);
+  reset();
+  redirectUser(newUser.role);
 });
