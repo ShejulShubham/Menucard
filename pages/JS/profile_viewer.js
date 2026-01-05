@@ -1,7 +1,6 @@
 
 
 const userLoggedKey="loggedInUser";
-localStorage.setItem(userLoggedKey,JSON.stringify(obj));
 let loggedInUser=JSON.parse(localStorage.getItem(userLoggedKey)) || [];
 
 let container=document.getElementById("container");
