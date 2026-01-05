@@ -4,65 +4,61 @@ body {
 }
 
 #hotel {
-    text-align: center;
-    color: brown;
-    align-items: center;
-    justify-content: center;
+  text-align: center;
+  color: brown;
+  align-items: center;
+  justify-content: center;
 }
 /*  */
 #container {
-    text-align: center;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-#signup, #login {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-    color: white;
-    width: 100px;
-    cursor: pointer;
-    background-color: rgb(40, 138, 218);
+#signup,
+#login {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  width: 100px;
+  cursor: pointer;
+  background-color: rgb(40, 138, 218);
 }
 
 a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .para {
-    font-size: 20px;
-    color: green;
+  font-size: 20px;
+  color: green;
 }
 
 
 #food {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 700px;
-    height: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  height: 500px;
 }
 
 #menu {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-    color: white;
-    width: 150px;
-    cursor: pointer;
-    background-color: rgb(218, 90, 40);        
-}
-
-#logo {
-    height: 250px;
-    width: 250px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  width: 150px;
+  cursor: pointer;
+  background-color: rgb(218, 90, 40);
 }

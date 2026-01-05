@@ -1,0 +1,19 @@
+#menu-card{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    margin-top:20px;
+}
+.card-div{
+    width:200px;
+    box-shadow: 1px 1px 1px 1px black;
+    padding: 10px;
+    border-radius: 9px;
+}
+h1{
+    text-align: center;
+}
+
+.card-div:hover{
+    transform: translateY(-7px);
+}

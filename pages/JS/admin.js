@@ -4,6 +4,7 @@ const storageKey = "Arpita-users";
 let arr=(JSON.parse(localStorage.getItem(storageKey))) || [];
 let list=document.getElementById("users-list");
 let displayarr=arr.filter(item=>item.role!="admin");
+let c=0;
 function renderuserlist(arr)
 {
     list.innerHTML="";
@@ -13,6 +14,7 @@ function renderuserlist(arr)
     li.innerHTML=`<p>${item.name}</p>
             <p>${item.email}</p>
             `;
+            c++;
     list.appendChild(li);
 });
 }
@@ -51,3 +53,9 @@ logout.addEventListener("click",()=>{
   userp.textContent="";
   redirect();
 });
+
+
+/*COUNT OF USER*/
+
+let count=document.getElementById("count");
+count.textContent="Current Total Users :"+c;
