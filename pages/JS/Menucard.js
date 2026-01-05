@@ -148,7 +148,7 @@ let loggedInUser=JSON.parse(localStorage.getItem(userLoggedKey));
 let userp=document.getElementById("user");
 console.log(loggedInUser.name);
 
-userp.textContent=loggedInUser.name;
+userp.textContent="Current User : "+loggedInUser.name;
 
 let logout=document.getElementById("logout");
 function redirect() {
