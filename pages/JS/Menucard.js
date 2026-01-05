@@ -138,3 +138,26 @@ sortAndFilter.addEventListener("change", function (e) {
         menu.appendChild(card);
     });
 });
+
+/*EXTRA*/
+const anchor = document.createElement("a");
+document.body.appendChild(anchor);
+const userLoggedKey = "loggedInUser";
+let loggedInUser=JSON.parse(localStorage.getItem(userLoggedKey));
+
+let userp=document.getElementById("user");
+console.log(loggedInUser.name);
+
+userp.textContent=loggedInUser.name;
+
+let logout=document.getElementById("logout");
+function redirect() {
+    anchor.href = "../index.html";
+    anchor.click();
+}
+logout.addEventListener("click",()=>{
+  alert("You are logged out");
+  localStorage.removeItem(userLoggedKey);
+  userp.textContent="";
+  redirect();
+});
