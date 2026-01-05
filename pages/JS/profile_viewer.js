@@ -1,11 +1,4 @@
-/*let loggedInUser=[
-    {
-        name:"Arpita Ambalkar",
-        email:"arpita26@gmail.com",
-        role:"user",
 
-    }
-];*/
 
 const userLoggedKey="loggedInUser";
 localStorage.setItem(userLoggedKey,JSON.stringify(obj));
