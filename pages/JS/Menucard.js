@@ -63,8 +63,8 @@ const menus = [
 
 const menu = document.getElementById("menu-card");
 const searchInput = document.getElementById("search");
-
-searchInput.addEventListener("input", searchName);
+let devbounceSearch=debounce(searchName,300)
+searchInput.addEventListener("input", devbounceSearch);
 
 function createCard(item) {
     let cardDiv = document.createElement("div");
@@ -161,3 +161,21 @@ logout.addEventListener("click",()=>{
   userp.textContent="";
   redirect();
 });
+
+
+
+/*EXTRA*/
+
+
+function debounce(func,delay)
+{
+  let timer;
+  return function (...args)
+  {
+    clearTimeout(timer);
+    timer=setTimeout(()=>{
+      func.apply(this,args);
+    },delay);
+  }
+}
+
