@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Card</title>
     <link rel="stylesheet" href="./CSS/menucard.css" />
 </head>
+
 <body>
     <h1>Menu Card</h1>
     <input id="search" placeholder="search menu" />
+    <select id="sortAndFilter">
+        <option>Select...</option>
+        <option value="sort-asc">Sort by Price: Low to High</option>
+        <option value="sort-desc">Sort by Price: High to Low</option>
+        <option value="filter-veg">Filter: Vegetarian</option>
+        <option value="filter-nonveg">Filter: Non-Vegetarian</option>
+    </select>
 
-    <div id="menu-card" >
+    <div id="menu-card">
 
     </div>
-    
+
     <script src="./JS/Menucard.js"></script>
+
 </body>
+
 </html>
