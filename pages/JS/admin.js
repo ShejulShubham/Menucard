@@ -3,7 +3,7 @@ const storageKey = "Arpita-users";
 
 let arr=(JSON.parse(localStorage.getItem(storageKey))) || [];
 let list=document.getElementById("users-list");
-
+let displayarr=[...arr];
 function renderuserlist(arr)
 {
     list.innerHTML="";
@@ -16,15 +16,14 @@ function renderuserlist(arr)
     list.appendChild(li);
 });
 }
-renderuserlist(arr);
+renderuserlist(displayarr);
 
-let input=document.getElementById("filter");
+let search=document.getElementById("filter");
 
-input.addEventListener("input",()=>{
-    let val=input.value;
-    let filtered=arr.forEach((item)=>{
-        item.name.includes(val);
-    });
-    renderuserlist(filtered);
 
-});
+
+search.addEventListener("input",(e)=>{
+    let val=e.target.value.toLowerCase();
+    let filterarr=arr.filter(item=>item.name.toLowerCase().includes(val));
+    renderuserlist(filterarr);
+})
