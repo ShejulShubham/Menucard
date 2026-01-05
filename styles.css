@@ -1,3 +1,8 @@
+body {
+    background-color: lightyellow;
+    font-family: 'Segoe UI', Tahoma, Geneva;
+}
+
 #hotel {
     text-align: center;
     color: brown;
@@ -35,6 +40,7 @@ a {
     color: green;
 }
 
+
 #food {
     display: block;
     margin-left: auto;
@@ -54,4 +60,9 @@ a {
     width: 150px;
     cursor: pointer;
     background-color: rgb(218, 90, 40);        
+}
+
+#logo {
+    height: 250px;
+    width: 250px;
 }
