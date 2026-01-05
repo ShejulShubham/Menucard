@@ -1,8 +1,11 @@
-body {
-    background-color: lightyellow;
-    font-family: 'Segoe UI', Tahoma, Geneva;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
+h1{
+  margin-top: 10px;
+}
 #hotel {
   text-align: center;
   color: brown;
@@ -39,6 +42,7 @@ a {
 .para {
   font-size: 20px;
   color: green;
+  margin:10px;
 }
 
 
@@ -61,4 +65,37 @@ a {
   width: 150px;
   cursor: pointer;
   background-color: rgb(218, 90, 40);
+}
+
+#cloud {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  width: 150px;
+  cursor: pointer;
+  background-color: rgb(18, 220, 200);
+}
+
+nav{
+  box-shadow: 1px 1px 1px 1px black;
+  padding: 10px;
+  display: flex;
+  height: 70px;
+  align-items:center;
+  justify-content: space-between;
+  gap:10px;
+}
+.right{
+  display: flex;
+  align-items: center;
+  gap:20px;
+
+}
+#logo{
+  height:50px;
+  width:50px;
 }
