@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Menu Card</title>
+    <link rel="stylesheet" href="./CSS/login.css" />
+</head>
+<body>
+    <div class="login-card" >
+        <h1>Login</h1>
+        <form id="login-form" action="submit">
+            <label > Email
+                <input type="email" id="email" required/>
+            </label>
+            <label >Password
+                <input type="password" id="password" required/>
+            </label>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+
+    <script >
+        const storageKey = "shubham-users";
+        const form = document.getElementById("login-form");
+        const emailInput = document.getElementById("email");
+        const passwordInput = document.getElementById("password");
+
+        form.addEventListener("submit", formSubmit);
+
+        function formSubmit(event){
+            event.preventDefault();
+            const trimmedEmail = emailInput.value.trim();
+            const trimmedPassword = passwordInput.value.trim();
+
+            if(!trimmedEmail || !trimmedPassword){
+                alert("Email and Password required!");
+                return;
+            }
+
+            const isUserExist = getUserDetails(trimmedEmail, trimmedEmail);
+
+            if(isUserExist){
+
+            }else {
+                
+            }
+        }
+
+        function getUserDetails(email, password){
+
+        }
+    </script>
+</body>
+</html>
