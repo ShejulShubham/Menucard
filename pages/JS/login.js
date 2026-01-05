@@ -29,7 +29,7 @@ function redirectUser(role) {
     anchor.href = "./admin.html";
     anchor.click();
   } else {
-    anchor.href = "./user.html";
+    anchor.href = "./Menucard.html";
     anchor.click();
   }
 }

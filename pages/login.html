@@ -18,38 +18,9 @@
             </label><br/><br/>
             <button type="submit" id="submit">Submit</button>
         </form>
+        <a href="./signup.html">Sign up</a>
     </div>
 
-    <script >
-        const storageKey = "shubham-users";
-        const form = document.getElementById("login-form");
-        const emailInput = document.getElementById("email");
-        const passwordInput = document.getElementById("password");
-
-        form.addEventListener("submit", formSubmit);
-
-        function formSubmit(event){
-            event.preventDefault();
-            const trimmedEmail = emailInput.value.trim();
-            const trimmedPassword = passwordInput.value.trim();
-
-            if(!trimmedEmail || !trimmedPassword){
-                alert("Email and Password required!");
-                return;
-            }
-
-            const isUserExist = getUserDetails(trimmedEmail, trimmedEmail);
-
-            if(isUserExist){
-
-            }else {
-                
-            }
-        }
-
-        function getUserDetails(email, password){
-
-        }
-    </script>
+    <script src="./JS/login.js"></script>
 </body>
 </html>
