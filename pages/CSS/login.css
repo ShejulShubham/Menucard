@@ -22,4 +22,8 @@
 .login-card {
     width: 300px;
     margin: auto;
+    padding:20px;
+    border: 1px solid #ccc;
+    align-items: center;
+    justify-content: center;
 }
