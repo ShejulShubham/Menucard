@@ -1,13 +1,12 @@
 const hero = document.getElementById("hero");
 const api = "https://free-food-menus-api-two.vercel.app";
 const fetchBtn = document.getElementById("fetch");
-const loadingElement = document.createElement("h2");
-loadingElement.innerText = "Loading data...";
+const loadingElement = document.getElementById("loading");
 
 fetchBtn.addEventListener("click", getData);
 
 async function getData() {
-  hero.appendChild(loadingElement);
+  loadingElement.classList.remove("hidden");
   try {
     setTimeout(async () => {
       const result = await fetch(`${api}/all`);
@@ -17,14 +16,14 @@ async function getData() {
       for (array in GroupedItems) {
         const header = document.createElement("h2");
         header.innerText = `Type: ${array}`;
-        hero.appendChild(header)
+        hero.appendChild(header);
         renderItems(GroupedItems[array], 10);
       }
-      hero.appendChild(loadingElement);
+      loadingElement.classList.remove("hidden");
     }, 2000);
   } catch (error) {
     console.error("Error: ", error.message);
-    hero.appendChild(loadingElement);
+    loadingElement.classList.remove("hidden");
   }
 }
 

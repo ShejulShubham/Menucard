@@ -51,7 +51,6 @@ form.addEventListener("submit", (event) => {
     return;
   }
 
-  // TODO: Not working
   if (checkUserExist(email)) {
     alert("User already exist!, try with different email");
     return;
@@ -74,6 +73,7 @@ form.addEventListener("submit", (event) => {
   userArr.push(newUser);
 
   localStorage.setItem(storageKey, JSON.stringify(userArr));
+  localStorage.setItem(userLoggedKey, JSON.stringify(newUser));
 
   reset();
   redirectUser(newUser.role);
