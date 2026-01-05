@@ -25,8 +25,33 @@
     background-color: rgb(40, 138, 218);
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
 .para {
     font-size: 20px;
     color: green;
 }
 
+#food {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    height: 400px;
+}
+
+#menu {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    width: 150px;
+    cursor: pointer;
+    background-color: rgb(218, 90, 40);        
+}
